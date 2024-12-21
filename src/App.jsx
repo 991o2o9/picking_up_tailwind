@@ -1,4 +1,5 @@
 import logo from "./assets/logo.png";
+import HeroBlock from "./components/HeroBLock/HeroBlock";
 import Services from "./components/Services/Services";
 const App = () => {
   const navigation = [
@@ -20,7 +21,7 @@ const App = () => {
   ];
   return (
     <div className="flex flex-col min-h-full">
-      <div className="px-24 flex justify-between items-center backdrop-blur-[10px] bg-[#00000080]">
+      <div className="px-24 flex justify-between items-center backdrop-blur-[10px] bg-[#00000080] w-full fixed z-1">
         <div className="max-w-[90px]">
           <img src={logo} alt="" className="w-full h-full cursor-pointer" />
         </div>
@@ -39,7 +40,8 @@ const App = () => {
         </button>
       </div>
       {/* content */}
-      <div className="flex-auto my-[20px] px-[89px]">
+      <div className="flex-auto">
+        <HeroBlock />
         <Services />
       </div>
       {/* content */}

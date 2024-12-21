@@ -14,7 +14,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-[40px]">
+    <div className="flex flex-col gap-[40px] my-[20px] px-[89px]">
       <h2 className="font-[600] text-[36px] text-[#fff] text-center">
         Наши услуги
       </h2>
@@ -24,7 +24,7 @@ const Services = () => {
             key={index}
             className="flex flex-col gap-[20px] py-[45px] px-[21px] rounded-[12px] bg-[#2B373E]"
           >
-            <h3 className="text-24px font-[600] text-[#fff]">{item.title}</h3>
+            <h3 className="text-[24px] font-[600] text-[#fff]">{item.title}</h3>
             <p className="font-[400] text-[15px] text-[#fff]">{item.desc}</p>
             <button className="w-full py-[6px] px-[10px] rounded-[10px] text-start bg-[#087FB2] transition-colors duration-400 ease-in-out hover:bg-[#00798C]">
               Подробнее
